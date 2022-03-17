@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>私のJavaScript</title>
+</head>
+
+<body>
+
+    <p>ボタンを押すと、曜日を表示する</p>
+    <button onclick="myFunction()">クリック</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let x = "";
+            // 曜日（0~6）
+            let d = new Date().getDay();
+            // TODO switch文法で実装してください。
+
+
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

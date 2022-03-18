@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>私のJavaScript</title>
+</head>
+
+<body>
+
+    <p>ボタンを押すと、曜日を表示する</p>
+    <button onclick="myFunction()">クリック</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let x = "";
+            let d = new Date().getDay();
+
+            switch (d) {
+                case 0: x = "日";
+                    break;
+                case 1: x = "月";
+                    break;
+                case 2: x = "火";
+                    break;
+                case 3: x = "水";
+                    break;
+                case 4: x = "木";
+                    break;
+                case 5: x = "金";
+                    break;
+                case 6: x = "土";
+                    break;
+            }
+
+            document.getElementById("demo").innerHTML = `今日は${x}曜日`;
+        }
+    </script>
+
+</body>
+
+</html>

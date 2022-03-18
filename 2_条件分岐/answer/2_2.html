@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>私のJavaScript</title>
+</head>
+
+<body>
+
+	<p>ボタンを押すと、時間による挨拶しましょう。</p>
+	<button onclick="myFunction()">クリック</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			let x = "";
+			let time = new Date().getHours();
+			if (time < 20) {
+				x = "Good day";
+			} else {
+				x = "Good evening";
+			}
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+
+</body>
+
+</html>

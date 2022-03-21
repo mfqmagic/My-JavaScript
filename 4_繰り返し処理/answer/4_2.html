@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>私のJavaScript</title>
+</head>
+
+<body>
+
+    <p>ボタンを押すと、0～9を出力して、3を除外する。</p>
+    <button onclick="myFunction()">クリック</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let x = "";
+            for (let i = 0; i < 10; i++) {
+                if (i == 3) {
+                    continue;
+                }
+                x += `番号：${i}<br>`;
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>
